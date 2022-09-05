@@ -3,6 +3,7 @@ const button = document.querySelector("#check");
 const msg = document.querySelector("#msg");
 const image = document.querySelector(".img");
 image.style.display = "none";
+
 function predictTheOutput(){
     // image.style.display = "none";
     if(input[0].value.length == 0 ||
@@ -10,6 +11,8 @@ function predictTheOutput(){
         input[2].value.length == 0){
             console.log("void");
 msg.innerText = "Kindly enter the values to see the output 👀";
+image.src = "./img/why.gif";
+image.style.display = "block";
 }
 else{
     let total = Number(input[0].value) + Number(input[1].value) + Number(input[2].value);

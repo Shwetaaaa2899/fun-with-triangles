@@ -4,20 +4,94 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <title>Triangle Quiz</title>
 
 </head>
 <body>
-   <h1>Triangle Quiz</h1>
+    <nav class = 'navigation container'>
+        <div class = 'nav-brand'>Fun-With-Triangle</div>
+     
+            
+            <ul class = 'list-non-bullet nav-pills'>
+                
+                    
+                <li  class = 'list-item-inline'>
+                    <a href = "/" class = 'link link-active'>Home</a> 
+                 </li>
+                 <li class = 'list-item-inline'>
+                     <a  href = 'quiz.html' class = 'link'>Quiz
+                     </li></a>  
+                 <li class = 'list-item-inline'>
+                     <a href = 'hypotenuse.html' class = 'link'> Hypotenuse</a> 
+                   
+                 </li>
+                 <li class = 'list-item-inline'>
+                    <a href = 'area.html' class = 'link'> Area</a> 
+                  
+                </li>
+               
+               
+            </ul>
+        </nav>
+   <h1>Triangle Quiz 🤓</h1>
    <form class = "quiz-form">
     <div class = "qstn-container">
-        <p>Hello?</p>
+        <p>Which of the following triangles have the same side lengths?</p>
     
-    <label ><input type = "radio">45*</label>
-    <label ><input type = "radio">45*</label>
-    <label ><input type = "radio">45*</label>   
+    <label ><input type = "radio" name ="qstn1" value = "">Scalene</label>
+    <label ><input type = "radio"  name ="qstn1" value = "Isosceles">Isosceles</label>
+    <label ><input type = "radio" name ="qstn1" value = "Equilateral">Equilateral</label>   
+</div>
+
+
+<div class = "qstn-container">
+    <p>The angle measures of a triangle are 30°,60°,90°. Which of the following best classifies the triangle?</p>
+
+<label ><input type = "radio" name ="qstn2" value = "Acute">Acute</label>
+<label ><input type = "radio"  name ="qstn2" value = "Obtuse">Obtuse</label>
+<label ><input type = "radio" name ="qstn2" value = "Right">Right</label>   
+</div>
+<div class = "qstn-container">
+    <p>What type of triangle has 3 equal sides and 3 equal angles that measure 60°.</p>
+
+<label ><input type = "radio" name ="qstn3" value = "equilateral triangle">equilateral triangle</label>
+<label ><input type = "radio"  name ="qstn3" value = "scalene triangle">scalene triangle</label>
+<label ><input type = "radio" name ="qstn3" value = "isosceles triangle">isosceles triangle</label>   
+</div>
+<div class = "qstn-container">
+    <p>All triangles have 3 sides and one right angle0?</p>
+
+<label ><input type = "radio" name ="qstn4" value = "True">True</label>
+<label ><input type = "radio"  name ="qstn4" value = "False">False</label>
+  
+</div>
+<div class = "qstn-container">
+    <p>What is a scalene triangle?</p>
+
+<label ><input type = "radio" name ="qstn5"  value = "A triangle with 3 equal sides.">A triangle with 3 equal sides.</label>
+<label ><input type = "radio"  name ="qstn5" value = "A triangle with 2 equal sides.">A triangle with 2 equal sides.</label>
+<label ><input type = "radio" name ="qstn5" value = "A triangle with no equal sides.">A triangle with no equal sides.</label>   
+</div>
+<div class = "qstn-container">
+    <p>For two triangles, if two angles and the included side of one triangle are equal to two angles and the included side of another triangle. Then the congruency rule is:</p>
+
+<label ><input type = "radio" name ="qstn6" value = "SSS">SSS</label>
+<label ><input type = "radio"  name ="qstn6" value = "ASA">ASA</label>
+<label ><input type = "radio" name ="qstn6" value = "SAS">SAS</label>   
+</div>
+<div class = "qstn-container">
+    <p> The angles opposite to equal sides of a triangle are:</p>
+
+<label ><input type = "radio" name ="qstn7" value = "Equal">Equal</label>
+<label ><input type = "radio"  name ="qstn7" value = " Unequal"> Unequal</label>
+<label ><input type = "radio" name ="qstn7" value = "Both">Both</label>   
 </div>
 </form>
-
+<button id="submit-form">Submit</button>
+<p id ='msg'></p>
+<script src ="index2.js"></script>
 </body>
 </html>
