@@ -9,7 +9,7 @@ function predictTheOutput(){
     if(input[0].value.length == 0 ||
         input[1].value.length == 0 ||
         input[2].value.length == 0){
-            console.log("void");
+            // console.log("void");
 msg.innerText = "Kindly enter the values to see the output 👀";
 image.src = "./img/why.gif";
 image.style.display = "block";
