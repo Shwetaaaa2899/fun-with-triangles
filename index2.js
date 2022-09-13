@@ -5,6 +5,8 @@ const outPut = document.querySelector("#msg");
 function calculateResults(){
     // alert("CLicked");
 const formData = new FormData(form);
+console.log(formData);
+
 let score = 0;
 let ind = 0;
 for(let i of formData.values()){
