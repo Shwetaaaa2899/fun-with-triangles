@@ -11,15 +11,15 @@ function calculateSquares(a,b){
 }
 function calculateHypotenuse(){
   console.log("connected");
-  if(side1.value.length == 0 && side2.value.length == 0){
+  if(side1.value.length == 0 && side2.value.length == 0 || (side1.value.length == 0 || side2.value.length == 0)){
     outPut.style.color = "red";
     outPut.innerText = "Blank values are not valid  to see the output 👀";
   }
-  else if(side1.value == 0 && side2.value == 0){
+  else if(side1.value == 0 && side2.value == 0 || (side1.value == 0 || side2.value == 0)){
     outPut.style.color = "red";
     outPut.innerText = "Zero as a  value for the input is not valid  to see the output 👀";
   }
-  else if(side1.value < 0 && side2.value < 0){
+  else if(side1.value < 0 && side2.value < 0 || (side1.value < 0 || side2.value < 0)){
     outPut.style.color = "red";
     outPut.innerText = "Negative  values are not valid  to see the output 👀";
   }

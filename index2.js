@@ -18,8 +18,17 @@ for(let i of formData.values()){
 };
 if(score == 7){
     outPut.innerText ="You have scored "+ score +" marks 💥 ";
+}else{
+    if(score == 0){
+        outPut.innerText ="Kindly attempt the quiz to see your scores 👀";
+        outPut.style.color = 'red';
+
+    }
+    else{
+        outPut.innerText ="You have scored "+ score +" marks";
+    }
+
 }
-outPut.innerText ="You have scored "+ score +" marks";
 
 };
 button.addEventListener('click',calculateResults);

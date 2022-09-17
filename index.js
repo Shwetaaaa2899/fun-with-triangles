@@ -10,6 +10,7 @@ function showDsiplay(message,src,flag){
    
     image.src = src;
     image.style.display = "block";
+    msg.style.color = 'red';
     
     }
 
@@ -18,6 +19,8 @@ function showDsiplay(message,src,flag){
         // msg.style.color = "black";
         image.src = src;
         image.style.display = "block";
+        msg.style.color = 'black';
+        
     }
  
 };
@@ -25,20 +28,27 @@ function predictTheOutput(){
     // image.style.display = "none";
     if(input[0].value.length == 0 &&
         input[1].value.length == 0 &&
-        input[2].value.length == 0){
+        input[2].value.length == 0 ||
+        (input[0].value.length == 0 ||
+            input[1].value.length == 0 ||
+            input[2].value.length == 0)){
             // console.log("void");
         showDsiplay("Blank values are not valid to see the output 👀","./img/why.gif",0);
 
     }
     else if(input[0].value < 0 &&
         input[1].value < 0 &&
-        input[2].value < 0){
+        input[2].value < 0 ||  (input[0].value < 0 ||
+            input[1].value < 0 ||
+            input[2].value < 0)){
             
                 showDsiplay("Negative  values are not valid to see the output 👀","./img/why.gif",0)
             }
           else  if(input[0].value == 0 &&
                 input[1].value == 0 &&
-                input[2].value == 0){
+                input[2].value == 0 || (input[0].value == 0 ||
+                    input[1].value == 0 ||
+                    input[2].value == 0)){
                     // console.log("void");
                 showDsiplay("Zero as a value for inputs  is not valid to see the output 👀","./img/why.gif",0);
         
